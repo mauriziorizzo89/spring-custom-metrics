@@ -2,12 +2,14 @@ package it.personal.springcustommetrics;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
+@EnableScheduling
 @SpringBootApplication
-public class SpringCustomMetricsApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringCustomMetricsApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
