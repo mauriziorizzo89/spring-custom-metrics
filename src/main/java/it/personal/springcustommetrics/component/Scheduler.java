@@ -10,7 +10,7 @@ import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Slf4j
-@Component
+//@Component
 public class Scheduler {
 
     private final AtomicInteger testGauge;
@@ -24,7 +24,7 @@ public class Scheduler {
         log.info("##########testGauge: [{}] - testCounter: [{}]", testGauge, testCounter);
     }
 
-    @Scheduled(fixedRateString = "1000", initialDelayString = "0")
+    //@Scheduled(fixedRateString = "1000", initialDelayString = "0")
     public void schedulingTask() {
         testGauge.set(Scheduler.getRandomNumberInRange(0, 100));
         testCounter.increment();
